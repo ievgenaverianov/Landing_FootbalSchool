@@ -1,0 +1,34 @@
+{
+  "name": "landing_footbalschool",
+  "version": "1.0.0",
+  "description": "Simple landing page for Footbal school",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ievgenaverianov/Landing_FootbalSchool.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ievgenaverianov/Landing_FootbalSchool/issues"
+  },
+  "homepage": "https://github.com/ievgenaverianov/Landing_FootbalSchool#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "multipipe": "^4.0.0"
+  }
+}
