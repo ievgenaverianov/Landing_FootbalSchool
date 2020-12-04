@@ -6,43 +6,51 @@ body {
 
 }
 
-.av-content-width {
+.av-container {
   width: 100%;
   max-width: 920px;
   margin: 0 auto;
   padding: 0 10px;
   font-family: 'Roboto', sans-serif;
+  font-size: 1vw;
+  font-weight: 700;
+  line-height: 1.45;
   color: #000;
 }
 
-.av-header {
-  height: 86px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  img {
-    margin: 4px 0 0 7px;
-  }
-  nav {
-    margin-left: -49px;
-  }
-  a {
-    font-weight: 400;
-    font-size: 11px;
+.av-header-wrapper {
+  .av-container {
+    height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     line-height: 1.3;
-    &:not(:last-child) {
-      margin-right: 20px;
+    img {
+      margin: 4px 0 0 7px;
     }
-  }
-  div {
-    width: 127px;
-    height: 32px;
-    margin-right: 7px;
-  }
-  span {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.3;
+
+    nav {
+      margin-left: -49px;
+    }
+
+    a {
+      font-size: 11px;
+      font-weight: 400;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+
+    div {
+      width: 127px;
+      height: 32px;
+      margin-right: 7px;
+    }
+
+    span {
+      font-size: 12px;
+    }
   }
 }
 
@@ -57,34 +65,145 @@ body {
   h1 {
     display: inline-block;
     width: 40%;
-    font-weight: 700;
     font-size: 40px;
-    line-height: 1.45;
     margin: 58px 0 4px 10px;
     vertical-align: top;
   }
   p {
     display: inline-block;
     width: 55%;
-    font-weight: 300;
     font-size: 15px;
+    font-weight: 300;
     line-height: 1.5;
     margin: 67px 0 0 14px;
     vertical-align: top;
   }
-  div {
+  .av-container div {
     width: 188px;
-    font-weight: 700;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.5);
-    margin: 0 0 43px 10px;
-  }
-  span {
-    display: inline-block;
     line-height: 1.2;
-    &:first-of-type {
-      margin-bottom: 19px;
+    margin: 0 0 38px 11px;
+    span {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      &:first-of-type {
+        margin-bottom: 16px;
+      }
     }
+  }
+}
+
+.av-trainings {
+  padding-top: 98px;
+  background: #F1F5ED;
+  h2 {
+    font-size: 32px;
+    margin-left: 11px;
+  }
+  .av-trainings__figures {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //width: 100%;
+    max-width: 880px;
+    margin: 51px auto 89px auto;
+    //padding: 0 10px;
+    //box-sizing: border-box;
+  }
+  figure {
+    width: 30.7%;
+    height: 0;
+    padding-bottom: 32.8%;
+    margin: 16px 0;
+    background: #fff;
+    img {
+      width: 100%;
+    }
+    figcaption {
+      font-size: 16px;
+      margin: 20px 10px 3px 20px;
+    }
+    span {
+      display: block;
+      width: 200px;
+      font-weight: 300;
+      font-size: 12px;
+      margin: 0 20px;
+    }
+  }
+  p {
+    width: 460px;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 17px 12px;
+    b {
+      font-weight: 700;
+    }
+  }
+  [type="email"] {
+    width: 330px;
+    height: 44px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 44px;
+    box-sizing: border-box;
+    margin: 46px 12px 101px 12px;
+    padding-left: 13px;
+    border: none;
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+  button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 121px;
+    height: 44px;
+    background: #2B2B2B;
+    font-size: 13px;
+    color: #fff;
+    padding: 10px;
+    border: none;
+  }
+}
+
+.av-gallery {
+  h2 {
+    font-size: 32px;
+    margin: 37px 11px 17px 11px;
+  }
+  p {
+    width: 430px;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 11px;
+  }
+  .av-gallery__pics {
+    display: grid;
+    grid-template-columns: 33.3% auto 33.3%;
+    margin: 70px -3px 70px -3px;
+    .av-gallery__pics__col {
+      justify-self: center;
+      width: 100%;
+      img {
+        display: block;
+        width: 90%;
+        margin: 0 auto 10% auto;
+      }
+    }
+  }
+}
+
+.av-footer-wrapper {
+  background: #F1F5ED;
+  padding: 90px;
+  .av-contacts-wrapper {
+    width: 346px;
+    height: 329px;
+    margin: 0 12px;
+    background: #2B2B2B;
+    color: #fff;
   }
 }
 

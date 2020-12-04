@@ -8,74 +8,96 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<!--<div class="av-content">-->
-<div class="av-header av-content-width">
-    <img src="img/logo.svg" alt="logo">
-    <nav>
-        <a href="#">Занятия и тренировки</a>
-        <a href="#">Фото клуба</a>
-        <a href="#">Контакты</a>
-    </nav>
-    <div>
-        <span>Вт.– Сб. — 9:00–21:00</span>
-        <span>Пн. — Выходной</span>
+<header class="av-header-wrapper">
+    <div class="av-container">
+        <img src="img/logo.svg" alt="logo">
+        <nav>
+            <a href="#">Занятия и тренировки</a>
+            <a href="#">Фото клуба</a>
+            <a href="#">Контакты</a>
+        </nav>
+        <div>
+            <span>Вт.– Сб. — 9:00–21:00</span>
+            <span>Пн. — Выходной</span>
+        </div>
     </div>
-</div>
-<div class="av-info av-content-width">
-    <img src="img/main.jpg" alt="main-pic">
-    <h1>Информация для родителей</h1>
-    <p>Задача футбольного клуба "Фаворит" – воспитание и развитие юных футболистов, их подготовка к выступлению
-        за первую команду. Занятия проводит старший тренер по футболу в Краснодарском Крае Кипиани Лаша Гелаевич.</p>
-    <div>
-        <span>ул. Поленовой, д. 1, Москва</span>
-        <span>Вт.– Сб. — 9:00–21:00</span>
-        <span>Пн. — Выходной</span>
+</header>
+<section class="av-info">
+    <div class="av-container">
+        <img src="img/main.jpg" alt="main-pic">
+        <h1>Информация для родителей</h1>
+        <p>Задача футбольного клуба "Фаворит" – воспитание и развитие юных футболистов, их подготовка к выступлению
+            за первую команду. Занятия проводит старший тренер по футболу в Краснодарском Крае Кипиани Лаша Гелаевич.</p>
+        <div>
+            <span>ул. Поленовой, д. 1, Москва</span>
+            <span>Вт.– Сб. — 9:00–21:00</span>
+            <span>Пн. — Выходной</span>
+        </div>
     </div>
-</div>
-<div class="av-trainings av-content-width">
-    <h2>Занятия и тренировки</h2>
-    <div>
-        <img src="img/training-1.jpg" alt="training-pic">
-        <b>Групповые занятия</b>
-        <span>Соревнование и тренировки</span>
+</section>
+<section class="av-trainings">
+    <div class="av-container">
+        <h2>Занятия и тренировки</h2>
+        <div class="av-trainings__figures">
+            <figure>
+                <img src="img/training-1.jpg" alt="training-pic">
+                <figcaption>Групповые занятия</figcaption>
+                <span>Соревнование и тренировки</span>
+            </figure>
+            <figure>
+                <img src="img/training-2.jpg" alt="training-pic">
+                <figcaption>Индивидуальные занятия</figcaption>
+                <span>Более пятидесяти экспонатов</span>
+            </figure>
+            <figure>
+                <img src="img/training-3.jpg" alt="training-pic">
+                <figcaption>Соревнования и турниры</figcaption>
+                <span>История искусства Древнего и Среднего Царств</span>
+            </figure>
+        </div>
+        <h2>Первая тренировка — бесплатно!</h2>
+        <p><b>Для знакомства с тренером и командой.</b> Мы же в свою очередь познакомимся со спортсменом. Распределение по группам
+            разного уровня подготовленности и способностей.</p>
+        <input type="email" name="email" placeholder="Ваш E-mail">
+        <button>Подписаться</button>
     </div>
-    <div>
-        <img src="img/training-2.jpg" alt="training-pic">
-        <b>Индивидуальные занятия</b>
-        <span>Более пятидесяти экспонатов</span>
+</section>
+<section class="av-gallery">
+    <div class="av-container">
+        <h2>Фото история</h2>
+        <p>Экспозиция музея-усадьбы включает наследие княгини В.И. Поленовой, представляющее культуры разных стран</p>
+        <div class="av-gallery__pics">
+            <div class="av-gallery__pics__col">
+                <img src="img/gallery-1.jpg" alt="gallery-pic">
+                <img src="img/gallery-5.jpg" alt="gallery-pic">
+            </div>
+            <div class="av-gallery__pics__col">
+                <img src="img/gallery-2.jpg" alt="gallery-pic">
+                <img src="img/gallery-4.jpg" alt="gallery-pic">
+            </div>
+            <div class="av-gallery__pics__col">
+                <img src="img/gallery-3.jpg" alt="gallery-pic">
+                <img src="img/gallery-6.jpg" alt="gallery-pic">
+            </div>
+        </div>
     </div>
-    <div>
-        <img src="img/training-3.jpg" alt="training-pic">
-        <b>Соревнования и турниры</b>
-        <span>История искусства Древнего и Среднего Царств</span>
+</section>
+<section class="av-footer-wrapper">
+    <div class="av-container">
+        <div class="av-contacts-wrapper">
+            <span class="av-contacts-wrapper__title">Контакты</span>
+            <div class="av-contacts-wrapper__contacts">
+                <span>+79235749076</span>
+                <span>favorit-football@gmail.com</span>
+                <span>ул. Поленовой, д. 1, Москва</span>
+            </div>
+            <div class="av-contacts-wrapper__schedule">
+                <span>Часы работы:</span>
+                <span>Вт.– Сб. — 9:00–21:00</span>
+                <span>Пн. — Выходной</span>
+            </div>
+        </div>
     </div>
-    <h2>Первая тренировка — бесплатно!</h2>
-    <p><b>Для знакомства с тренером и командой.</b> Мы же в свою очередь познакомимся со спортсменом. Распределение по группам
-        разного уровня подготовленности и способностей.</p>
-    <input type="email">
-    <button>Подписаться</button>
-</div>
-<div>
-    <h2>Фото история</h2>
-    <p>Экспозиция музея-усадьбы включает наследие княгини В.И. Поленовой, представляющее культуры разных стран</p>
-    <img src="img/gallery-1.jpg" alt="gallery-pic">
-    <img src="img/gallery-2.jpg" alt="gallery-pic">
-    <img src="img/gallery-3.jpg" alt="gallery-pic">
-    <img src="img/gallery-4.jpg" alt="gallery-pic">
-    <img src="img/gallery-5.jpg" alt="gallery-pic">
-    <img src="img/gallery-6.jpg" alt="gallery-pic">
-</div>
-<div>
-    <div>
-        <span>Контакты</span>
-        <span>+79235749076</span>
-        <span>favorit-football@gmail.com</span>
-        <span>ул. Поленовой, д. 1, Москва</span>
-        <span>Часы работы:</span>
-        <span>Вт.– Сб. — 9:00–21:00</span>
-        <span>Пн. — Выходной</span>
-    </div>
-</div>
-<!--</div>-->
+</section>
 </body>
 </html>
