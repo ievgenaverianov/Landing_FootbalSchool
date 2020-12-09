@@ -10,29 +10,41 @@
 <body>
 <header class="av-header-wrapper">
     <div class="av-container">
-        <img src="img/logo.svg" alt="logo">
+        <picture>
+            <source media="(max-width: 767px)" srcset="img/logo-mob.svg">
+            <img src="img/logo.svg" alt="horsing">
+        </picture>
         <nav>
             <a href="#">Занятия и тренировки</a>
             <a href="#">Фото клуба</a>
             <a href="#">Контакты</a>
         </nav>
-        <div>
+        <div class="av-header-wrapper__schedule">
             <span>Вт.– Сб. — 9:00–21:00</span>
             <span>Пн. — Выходной</span>
+        </div>
+        <div class="av-sandwich-menu">
+            <div class="av-sandwich-menu_line-one"></div>
+            <div class="av-sandwich-menu_line-two"></div>
+            <div class="av-sandwich-menu_line-three"></div>
         </div>
     </div>
 </header>
 <section class="av-info">
     <div class="av-container">
         <img src="img/main.jpg" alt="main-pic">
-        <h1>Информация для родителей</h1>
-        <p>Задача футбольного клуба "Фаворит" – воспитание и развитие юных футболистов, их подготовка к выступлению
-            за первую команду. Занятия проводит старший тренер по футболу в Краснодарском Крае Кипиани Лаша Гелаевич.</p>
-        <div>
-            <span>ул. Поленовой, д. 1, Москва</span>
-            <span>Вт.– Сб. — 9:00–21:00</span>
-            <span>Пн. — Выходной</span>
+        <div class="av-info__left-col">
+            <h1>Информация для родителей</h1>
+            <div class="av-info__schedule">
+                <span>ул. Поленовой, д. 1, Москва</span>
+                <span>Вт.– Сб. — 9:00–21:00</span>
+                <span>Пн. — Выходной</span>
+            </div>
         </div>
+        <p>Задача футбольного клуба "Фаворит" – воспитание и развитие юных футболистов, их подготовка к выступлению
+            за первую команду. <br>
+            Занятия проводит старший тренер по футболу в Краснодарском Крае Кипиани Лаша Гелаевич.
+        </p>
     </div>
 </section>
 <section class="av-trainings">
@@ -85,7 +97,7 @@
 <section class="av-footer-wrapper">
     <div class="av-container">
         <div class="av-contacts-wrapper">
-            <span class="av-contacts-wrapper__title">Контакты</span>
+            <h3>Контакты</h3>
             <div class="av-contacts-wrapper__contacts">
                 <span>+79235749076</span>
                 <span>favorit-football@gmail.com</span>
@@ -95,6 +107,11 @@
                 <span>Часы работы:</span>
                 <span>Вт.– Сб. — 9:00–21:00</span>
                 <span>Пн. — Выходной</span>
+            </div>
+            <div class="av-contacts-wrapper__icons">
+                <a href="#"><i class="av-contacts-wrapper__fb-icon"></i></a>
+                <a href="#"><i class="av-contacts-wrapper__yt-icon"></i></a>
+                <a href="#"><i class="av-contacts-wrapper__ig-icon"></i></a>
             </div>
         </div>
     </div>
